@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #e7d5c9;
+    background-image: url('Images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    margin-right: 500px;
+  }
+  
+  .logo img {
+    width: 140px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-right: 100px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #DAC0A7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background-color: #DAC0A7;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  .search-icon {
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-content {
+    text-align: center;
+    margin-top: 58px;
+    font-size: 20px;
+  }
+  
+  .section-heading {
+    font-size: 90px;
+    margin-top: 41px;
+    margin-bottom: -12px;
+    font-family: Breul Grotesk B Heavy, sans-serif;
+    color: #333;
+  }
+  
+  .drink-options {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    margin-right: 57px;
+  }
+  
+  
+  .drink-option img {
+    max-width: 50%;
+    border-radius: 10px;
+  }
+  #drink2{
+    margin-left: 50px;
+  }
+  .drink-option p {
+    margin-top: -150px;
+    margin-left: -205px;
+    font-weight: bold;
+    display: inline-block; /* Display as inline-block to make it a button */
+    padding: 8px 16px; /* Add padding for spacing */
+    background-color: #333; /* Set button background color */
+    color: white; /* Set button text color */
+    border-radius: 20px; /* Add border radius for rounded ends */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+  }
+  
+
+
+  .center-photo-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px; /* Adjust as needed */
+    z-index: -1; /* Push the image to the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .center-photo {
+    max-width: 100%;
+  }
+  
+  .center-text {
+    font-size: 30px; /* Adjust as needed */
+    font-weight: bold;
+    margin-top: 10px; /* Adjust as needed */
+    color: #013B23; /* Set text color */
+  }
+  
+
+  .corner-photo {
+    position: fixed;
+    max-width: 1000px; /* Adjust as needed */
+    z-index: -1; /* Push the images to the background */
+  }
+  
+  .top-left {
+    top: 0;
+    left: 0;
+    transform: translate(-395px, -84px);
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+    transform: translate(419px, -200px);
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(-432px, 214px);
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(373px, 153px);
+  }
+  
+  .center-photo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px; /* Adjust as needed */
+    z-index: -1; /* Push the image to the background */
+  }
+
+
+
+.bottom-image {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: -8px;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center; /* Center horizontally */
+}
+
+.bottom-image img {
+  max-width: 800px; /* Adjust the image width */
+  max-height: auto; /* Adjust the image height */
+  margin-right: 27px;
+}
+
+
