@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     background-color: #e7d5c9;
     background-image: url('Images/background.png');
     background-repeat: no-repeat;
@@ -10,35 +10,53 @@ body {
   
   header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: transparent;
+    margin-left: 65px;
   }
   
   .logo {
     display: flex;
     align-items: center;
-    margin-left: 65px;
-    margin-right: 500px;
   }
   
   .logo img {
-    width: 140px;
+    width: 8.75rem;
     height: auto;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
-  
+  nav{
+    margin-left: 360px;
+  }
   nav ul {
     list-style: none;
     display: flex;
-    gap: 80px;
-    margin-right: 100px;
+    gap: 3.75rem;
+    margin: 0;
   }
   
   nav a {
     text-decoration: none;
     color: #333;
     font-weight: 800;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .logo {
+      margin-bottom: 1.25rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      gap: 1.25rem;
+    }
   }
 
   .search-bar {
@@ -48,6 +66,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 50px;
   }
   
   .search-bar input {
@@ -67,6 +86,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    margin-right: 15%;
   }
   
   .cart-icon {
@@ -90,13 +110,13 @@ body {
   
   .main-content {
     text-align: center;
-    margin-top: 58px;
+    margin-top: 20px;
     font-size: 20px;
   }
   
   .section-heading {
     font-size: 90px;
-    margin-top: 41px;
+    margin-top: auto;
     margin-bottom: -12px;
     font-family: 'Concert One', cursive;
     color: #333;
@@ -121,24 +141,24 @@ body {
     margin-top: -150px;
     margin-left: -205px;
     font-weight: bold;
-    display: inline-block; /* Display as inline-block to make it a button */
-    padding: 8px 16px; /* Add padding for spacing */
-    background-color: #333; /* Set button background color */
-    color: white; /* Set button text color */
-    border-radius: 20px; /* Add border radius for rounded ends */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
   }
   
 
 
   .center-photo-container {
     position: fixed;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 1000px; /* Adjust as needed */
-    z-index: -1; /* Push the image to the background */
+    max-width: 100%;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,17 +170,17 @@ body {
   }
   
   .center-text {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px; /* Adjust as needed */
-    color: #013B23; /* Set text color */
+    margin-top: 10px;
+    color: #013B23;
   }
   
 
   .corner-photo {
     position: fixed;
-    max-width: 1000px; /* Adjust as needed */
-    z-index: -1; /* Push the images to the background */
+    max-width: 1000px;
+    z-index: -1;
   }
   
   .top-left {
@@ -189,29 +209,29 @@ body {
   
   .center-photo {
     position: fixed;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 1000px; /* Adjust as needed */
-    z-index: -1; /* Push the image to the background */
+    max-width: 60%;
+    z-index: -1;
   }
 
 
 
-.bottom-image {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-bottom: -8px;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center; /* Center horizontally */
-}
+  .bottom-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+  }
 
 .bottom-image img {
-  max-width: 800px; /* Adjust the image width */
-  max-height: auto; /* Adjust the image height */
+  max-width: 44%;
+  max-height: auto;
   margin-right: 27px;
+  margin-bottom: -40px;
 }
 
 
